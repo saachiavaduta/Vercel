@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Page</title>
+</head>
+    <style>
+        body {
+            background: #14c9b2;
+            padding: 15px 22px;
+        }
+
+        .page {
+            background: #f5f5ed;
+            padding: 25px 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 430px;
+            position: relative;
+        }
+
+          nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            top: -10px;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+            color: #16163d;
+        }
+
+        .nav-center {
+            font-size: 8px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #777;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 30px;
+            font-size: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            gap: 70px;
+        }
+
+         .main {
+            display: flex;
+            align-items: center;
+            gap: 70px;
+        }
+
+        .left {
+            width: 30%;
+        }
+
+        .left h1 {
+            font-size: 50px;
+            color: #29205d;
+            margin-bottom: 20px;
+        }
+
+        .left p {
+            font-size: 10px;
+            color: #555;
+            width: 260px;
+            margin-bottom: 18px;
+        }
+
+        .explore {
+            border: none;
+            background: linear-gradient(to right, #ff2b65, #ff6845);
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 11px 43px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .cards {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        .card-content h2 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .location::before{
+            content:"📍";
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .location{
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .location1,
+        .location2,
+        .location3 {
+             position: relative;
+             width: 180px;
+             height: 280px;
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+             border-radius: 3px;
+        }
+
+        .location1 {
+             background-image: url("cappadocia.jfif");
+        }
+
+        .location2 {
+             background-image: url("santorini.jfif");
+              top: -15px;
+        }
+
+        .location3 {
+             background-image: url("bali.jfif");
+        }
+
+        .card-content {
+             position: absolute;
+             bottom: 15px;
+             left: 15px;
+             color: white;
+        }
+
+         .bottom {
+            position: absolute;
+            bottom: 2px;
+            left: 40px;
+            right: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social {
+            display: flex;
+            gap: 15px;
+            font-size: 9px;
+            color: #555;
+        }
+
+        .destination {
+            font-size: 8px;
+            font-weight: bold;
+            color: #888;
+            letter-spacing: 1px;
+        }
+
+        .page-no {
+            font-size: 8px;
+            color: #555;
+            letter-spacing: 2px;
+        }
+
+        .arrows {
+            display: flex;
+            gap: 10px;
+        }
+
+        .arrow {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            background: transparent;
+            color: #777;
+            cursor: pointer;
+        }
+    </style>
+<body>
+    <body> 
+    <div class="page"> 
+
+        <nav> 
+            <div class="logo">travel.</div> 
+
+            <div class="nav-center"> 
+                CARD SLIDER FOR WORDPRESS 
+            </div> 
+
+            <div class="nav-right"> 
+                <span>ABOUT</span> 
+                <span>CONTACT</span> 
+            </div> 
+        </nav> 
+
+
+        <div class="main"> 
+
+            <div class="left"> 
+
+                <h1> 
+                    Must see<br> 
+                    Places 
+                </h1> 
+
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Proin elementum metus eu enim rhoncus posuere. 
+                </p> 
+
+                <button class="explore"> 
+                    Explore 
+                </button> 
+
+            </div>
+
+
+            <div class="cards"> 
+
+                <div class="location1"> 
+                    <div class="card-content"> 
+                        <h2>Cappadocia</h2> 
+                        <div class="location">TURKEY</div> 
+                    </div> 
+                </div> 
+         
+                <div class="location2"> 
+                    <div class="card-content"> 
+                        <h2>Santorini</h2> 
+                        <div class="location">GREECE</div> 
+                    </div> 
+                </div> 
+             
+                <div class="location3"> 
+                    <div class="card-content"> 
+                        <h2>Bali</h2> 
+                        <div class="location">INDONESIA</div> 
+                    </div> 
+                </div> 
+
+            </div> 
+
+        </div> 
+
+
+        <div class="bottom"> 
+
+            <div class="social"> 
+                <span>f</span> 
+                <span>▶</span> 
+                <span>@</span> 
+            </div> 
+
+            <div class="destination"> 
+                UNIQUE DESTINATIONS 
+            </div> 
+
+            <div class="page-no"> 
+                01 / 03 
+            </div> 
+
+            <div class="arrows"> 
+                <button class="arrow">‹</button> 
+                <button class="arrow">›</button> 
+            </div> 
+
+        </div> 
+
+
+    </div> 
+</body>
+</html>
